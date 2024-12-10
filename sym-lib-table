@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "custom_library")(type "KiCad")(uri "${KIPRJMOD}/custom_library/custom_library.kicad_sym")(options "")(descr ""))
+  (lib (name "kicad-pride-flags")(type "KiCad")(uri "/home/funkeleinhorn/repos/github/uart-converter-pcb/kicad-pride-flags.kicad_sym")(options "")(descr ""))
+)
