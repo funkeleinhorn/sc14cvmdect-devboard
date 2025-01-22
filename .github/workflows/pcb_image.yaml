@@ -14,23 +14,18 @@ jobs:
         with:
           pcb_file: sc14cvmdect-devboard.kicad_pcb
           output_path: ${{ github.workspace }}/images
-      # - name: render schematic pdf
-      #   uses: actions-for-kicad/generate-kicad-files@v1.0
-      #   with:
-      #     file: './sc14cvmdect-devboard.kicad_sch'
-      #     type: 'schematic_pdf'  
       - name: Setup Pages
-        if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/main'
         uses: actions/configure-pages@v5
 
       - name: Upload Artifact
-        if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v3
         with:
           path: "images"
 
   deploy-pages:
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     needs: render-image
       
