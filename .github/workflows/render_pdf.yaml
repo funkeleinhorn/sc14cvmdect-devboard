@@ -1,0 +1,43 @@
+name: Export Schematic PDF
+
+on:
+  push:
+    paths:
+        - 'sc14cvmdect-devboard.kicad_sch'
+  workflow_dispatch:
+
+jobs:
+  export-schematic-pdf:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Install kicad / kicad-cli
+        run: |
+            sudo add-apt-repository --yes ppa:kicad/kicad-8.0-releases
+            sudo apt update
+            sudo apt install --install-recommends kicad
+
+      - name: Export schematic to PDF
+        run: |
+          kicad-cli sch export pdf sc14cvmdect-devboard.kicad_sch --output sc14cvmdect-devboard.pdf
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          
+          # Stage the PDF
+          git add sc14cvmdect-devboard.pdf
+          
+          # Commit only if there are changes
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: update schematic PDF [skip ci]"
+            git push
+          fi
