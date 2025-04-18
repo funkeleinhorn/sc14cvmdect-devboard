@@ -1,0 +1,344 @@
+(footprint "Speaker_CUI_CMR-15062S-67"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Speaker, 30mW, 300-7000Hz, IP67 face, 12x6x2,25mm, https://www.sameskydevices.com/product/resource/cmr-15062s-67.pdf")
+	(tags "speaker CUI")
+	(property "Reference" "LS1"
+		(at -0.2 4.2 0)
+		(layer "F.SilkS")
+		(uuid "7cad2752-f3b4-409d-98a7-b338a5467e72")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Speaker"
+		(at 0 4.5 0)
+		(layer "F.Fab")
+		(uuid "3541607b-7089-4c64-8aa5-49e0d0eaa0e4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "custom_footprints:Speaker_CUI_CMR-15062S-67"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "af147745-971f-4a7b-8d2e-f2262e447cca")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.sameskydevices.com/product/resource/cmr-15062s-67.pdf"
+		(at -1.25 -0.05 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6b214e5d-5123-496c-a6f5-d4deeb16dac0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Speaker"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ae10208a-3fa5-4c59-afde-35124099074b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -7.7 2.55)
+		(end -7.7 3.55)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "16a5c270-7f9c-41a9-a8bc-4bf66a752be5")
+	)
+	(fp_line
+		(start -7.7 3.55)
+		(end -6.7 3.55)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "12f41900-241e-489d-9d3e-e2d03e8b3270")
+	)
+	(fp_line
+		(start -7.35 -3.15)
+		(end 7.35 -3.15)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4ccdb7a1-b8dc-48c6-8ba3-a405deaf5d17")
+	)
+	(fp_line
+		(start -7.35 1)
+		(end -7.35 -3.15)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "abefaad2-fc85-4e95-a6ff-c5600852cfc3")
+	)
+	(fp_line
+		(start 5.65 3.05)
+		(end -5.65 3.05)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e9f0e314-099d-4b43-aeb4-de04b536a46f")
+	)
+	(fp_line
+		(start 7.35 -3.15)
+		(end 7.35 1)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "dd6d2840-0348-4ad4-87da-7577d10a6d87")
+	)
+	(fp_line
+		(start -7.9 0.75)
+		(end -7.9 3.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "4d1295b6-34ab-47b3-8533-cf268c369c5d")
+	)
+	(fp_line
+		(start -7.9 3.75)
+		(end -5.4 3.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3baae91a-b035-40e2-ac76-cdd3ecad041a")
+	)
+	(fp_line
+		(start -7.75 -3.55)
+		(end 7.75 -3.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "21c87abc-8524-4a84-a5e9-999895a49f55")
+	)
+	(fp_line
+		(start -7.75 0.75)
+		(end -7.9 0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "62dff7dd-e031-47ea-9799-a26d0bfc86a9")
+	)
+	(fp_line
+		(start -7.75 0.75)
+		(end -7.75 -3.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e1797fff-a122-453e-9848-6fac77ada7a4")
+	)
+	(fp_line
+		(start -5.4 3.75)
+		(end -5.4 3.45)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "cb9dd007-f811-4c57-980c-11a9ce60fdc6")
+	)
+	(fp_line
+		(start 5.4 3.45)
+		(end -5.4 3.45)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "063c0301-fcb4-4a69-9ca5-1cfd5af6d7f0")
+	)
+	(fp_line
+		(start 5.4 3.75)
+		(end 5.4 3.45)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8a22e4fd-4a36-4a92-b3e7-f2b0c9a43d79")
+	)
+	(fp_line
+		(start 7.75 -3.55)
+		(end 7.75 0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "4e18cfd0-57da-46f1-99f2-0123990c9f82")
+	)
+	(fp_line
+		(start 7.75 0.75)
+		(end 7.9 0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "77fe9b9c-439f-4ed1-884d-806668c55901")
+	)
+	(fp_line
+		(start 7.9 0.75)
+		(end 7.9 3.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0e11f808-48e0-4baf-a0af-bec9d5278ea1")
+	)
+	(fp_line
+		(start 7.9 3.75)
+		(end 5.4 3.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "82faf236-6e48-45d3-bc23-ccf5642a8d70")
+	)
+	(fp_line
+		(start -7.25 -3.05)
+		(end -7.25 2.95)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "94794668-cc74-4e2a-8b93-def6e2479d97")
+	)
+	(fp_line
+		(start -7.25 2.95)
+		(end 7.25 2.95)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7e10f199-4dba-4d1b-aa12-feb88a62e174")
+	)
+	(fp_line
+		(start -5.25 2.2)
+		(end -4.25 2.2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "52a00cef-bd00-47a6-b46e-85db323bb22c")
+	)
+	(fp_line
+		(start -4.75 2.7)
+		(end -4.75 1.7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "141ada68-75fc-4c44-b5fd-3f943b82c17d")
+	)
+	(fp_line
+		(start 7.25 -3.05)
+		(end -7.25 -3.05)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "754369f5-b1d4-43e0-8425-e48565e284e2")
+	)
+	(fp_line
+		(start 7.25 2.95)
+		(end 7.25 -3.05)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3f4b5453-0b1f-4e5c-9cb0-66c68de35d11")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.1 0 0)
+		(layer "F.Fab")
+		(uuid "5e3f458c-460b-47fb-9c0b-296a51f6405c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -6.65 2.25 180)
+		(size 1.5 2)
+		(layers "F.Cu" "F.Mask")
+		(uuid "97d11c68-90c7-4994-a672-0f7ada6de4b8")
+	)
+	(pad "2" smd rect
+		(at 6.65 2.25 180)
+		(size 1.5 2)
+		(layers "F.Cu" "F.Mask")
+		(uuid "c0da88d5-3160-4822-bc7e-ff854a9fce29")
+	)
+	(model "${KICAD8_3DMODEL_DIR}/Buzzer_Beeper.3dshapes/Speaker_CUI_CMR-1206S-67.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -13,7 +13,12 @@ jobs:
         uses: linalinn/kicad-render@main
         with:
           pcb_file: sc14cvmdect-devboard.kicad_pcb
-          output_path: ${{ github.workspace }}/images
+          output_path: ${{ github.workspace }}/images/devboard
+      - name: render audio header image
+        uses: linalinn/kicad-render@main
+        with:
+          pcb_file: header_boards/audio_header/audio_header.kicad_pcb
+          output_path: ${{ github.workspace }}/images/headers/audio
       - name: Setup Pages
         if: github.ref == 'refs/heads/main'
         uses: actions/configure-pages@v5

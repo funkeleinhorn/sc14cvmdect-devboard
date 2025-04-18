@@ -4,6 +4,7 @@ on:
   push:
     paths:
         - 'sc14cvmdect-devboard.kicad_sch'
+        - 'header_boards/audio_header/audio_header.kicad_sch'
   workflow_dispatch:
 
 jobs:
@@ -18,13 +19,14 @@ jobs:
 
       - name: Install kicad / kicad-cli
         run: |
-            sudo add-apt-repository --yes ppa:kicad/kicad-8.0-releases
+            sudo add-apt-repository --yes ppa:kicad/kicad-9.0-releases
             sudo apt update
             sudo apt install --install-recommends kicad
 
       - name: Export schematic to PDF
         run: |
           kicad-cli sch export pdf sc14cvmdect-devboard.kicad_sch --output sc14cvmdect-devboard.pdf
+          kicad-cli sch export pdf header_boards/audio_header/audio_header.kicad_sch --output header_boards/audio_header/audio_header.pdf
 
       - name: Commit and push changes
         run: |
@@ -33,7 +35,8 @@ jobs:
           
           # Stage the PDF
           git add sc14cvmdect-devboard.pdf
-          
+          git add header_boards/audio_header/audio_header.pdf          
+
           # Commit only if there are changes
           if git diff --cached --quiet; then
             echo "No changes to commit."
